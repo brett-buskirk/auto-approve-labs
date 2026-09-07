@@ -1,0 +1,26 @@
+# CI for lab 001 — proves the lab's full contract (setup → verify → teardown) on a clean
+# runner. This is also the episode's recorded evidence for its headless claims: the
+# permission-bits tty probe misbehaves the same way on a GitHub-hosted runner as it does
+# under local setsid.
+name: Lab 001
+
+on:
+  pull_request:
+    paths:
+      - '001-the-prompt-that-never-asked/**'
+      - '.github/workflows/lab-001.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 001-the-prompt-that-never-asked
+    steps:
+      - uses: actions/checkout@v4
+      - run: make setup
+      - run: make verify
+      - run: make teardown
