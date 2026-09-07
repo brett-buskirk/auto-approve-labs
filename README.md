@@ -9,7 +9,7 @@ Every episode takes one real task end to end, drives it into a ditch on purpose,
 the guardrail that catches it. The labs are where you do the same thing yourself. One lab
 per episode that needs one, each treated like production code.
 
-> Podcast feed: `TODO` — link lands here at launch.
+> Listen: [auto-approve.podbean.com](https://auto-approve.podbean.com/)
 
 ## The labs
 
