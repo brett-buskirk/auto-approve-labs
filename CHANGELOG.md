@@ -8,3 +8,5 @@ All notable changes to auto-approve-labs are documented here. The format is base
 
 ### Added
 - Initial scaffold.
+- Lab 001 — `001-the-prompt-that-never-asked`: the pilot episode's lab (stale-branch reaper,
+  the tty-probe bug, 27-check verify suite) with its `Lab 001` CI workflow.
